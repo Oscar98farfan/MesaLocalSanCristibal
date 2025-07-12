@@ -1,10 +1,10 @@
 /* ===== VARIABLES GLOBALES ===== */
 :root {
     /* Colores */
-    --azul-fuerte: #3c6e99; /* Azul industrial */
-    --azul-oscuro: #4d9d6c; /* Verde proceso */
-    --azul-claro: #536b94;  /* Azul datos */
-    --azul-suave: #e8f5ff;  /* Azul muy claro */
+    --azul-fuerte: #A0522D; /* Rojo */
+    --azul-oscuro: #D4A017; /* Amarillo */
+    --azul-claro: #6B8E23;  /* Azul datos */
+    --azul-suave: #F5F5DC;  /* Azul muy claro */
     --black: #000000;
     --white: #ffffff;
     --gray: #f4f4f4;
@@ -51,7 +51,7 @@ body {
 
 /* ===== HEADER Y NAVEGACIÓN ===== */
 header {
-    background: linear-gradient(180deg, var(--azul-claro), var(--azul-oscuro));
+    background: linear-gradient(180deg, var(--azul-fuerte), var(--azul-oscuro));
     position: fixed;
     width: 100%;
     top: 0;
@@ -89,7 +89,7 @@ header {
     left: -250px; /* Oculto por defecto */
     width: 250px;
     height: 100vh;
-    background: linear-gradient(180deg, var(--azul-claro), var(--azul-oscuro));
+    background: linear-gradient(180deg, var(--azul-fuerte), var(--azul-oscuro));
     padding: 20px;
     transition: left 0.3s ease;
     z-index: 1001;
@@ -242,7 +242,7 @@ header {
 }
 
 .project-card {
-    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro));
+    background: linear-gradient(to right, var(--azul-fuerte), var(--azul-oscuro));
     color: var(--white);
     padding: 15px 30px;
     border-radius: var(--border-radius);
@@ -488,6 +488,49 @@ footer {
     line-height: 1.6;
     text-align: justify;
 }
+
+.gallery-container {
+  padding: 2rem 1rem;
+}
+
+.gallery-grid {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(0,0,0,.6);
+  color: #fff;
+  font-size: .85rem;
+  text-align: center;
+  padding: .3rem 0;
+}
+
+
+
+
 
 /* Estilos para las habilidades */
 .skills-container h3 {
