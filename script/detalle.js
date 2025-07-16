@@ -10,29 +10,24 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Pijao",
       emprendimientos: [
         {
-          nombre: "Artesanías Tierra Pijao",
-          descripcion: "Productos hechos a mano con identidad ancestral.",
-          imagen: "../img/Producto2.png"
+          nombre: "Tamales Pijao",
+          descripcion: "¡PARA TODO MAL UN TAMAL Y PARA TODO BIEN TAMBIEN¡",
+          imagen: "../img/20.jpg"
         },
         {
-          nombre: "Café Orgánico Pijao",
-          descripcion: "Café cultivado de forma tradicional en las montañas del Tolima.",
-          imagen: "../img/Producto2.png"
+          nombre: "FoGata",
+          descripcion: "DESCUBRE EL PODER CURATIVO DE LO NATURAL",
+          imagen: "../img/12.jpg"
         },
         {
-          nombre: "Café Orgánico Pijao",
-          descripcion: "Café cultivado de forma tradicional en las montañas del Tolima.",
-          imagen: "../img/Producto2.png"
+          nombre: "ARTEMIA",
+          descripcion: "SEMILLAS QUE ENAMORAN AMBIKA PIJAO",
+          imagen: "../img/3.jpg"
         },
         {
-          nombre: "Café Orgánico Pijao",
-          descripcion: "Café cultivado de forma tradicional en las montañas del Tolima.",
-          imagen: "../img/Producto2.png"
-        },
-        {
-          nombre: "Café Orgánico Pijao",
-          descripcion: "Café cultivado de forma tradicional en las montañas del Tolima.",
-          imagen: "../img/Producto2.png"
+          nombre: "LOS SABORES DE LA ABUELA",
+          descripcion: "SABOR QUE NACE DE LA TIERRA, TRADICIÓN QUE SE COMPARTE",
+          imagen: "../img/10.jpg"
         }
       ]
     },
