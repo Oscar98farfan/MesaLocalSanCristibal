@@ -1,27 +1,24 @@
 /* ===== VARIABLES GLOBALES ===== */
 :root {
-    /* Colores */
-    --azul-fuerte: #A0522D; /* Rojo */
-    --azul-oscuro: #D4A017; /* Amarillo */
-    --azul-claro: #6B8E23;  /* Azul datos */
-    --azul-suave: #F5F5DC;  /* Azul muy claro */
+    --azul-fuerte: #A0522D;
+    --azul-oscuro: #D4A017;
+    --azul-claro: #6B8E23;
+    --azul-suave: #F5F5DC;
     --black: #000000;
     --white: #ffffff;
     --gray: #f4f4f4;
-    
-    /* Tipografía */
+
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
     --ex: 22px;
-    
-    /* Diseño */
+
     --border-radius: 10px;
     --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     --transition: all 0.3s ease;
 }
 
-/* ===== RESET Y ESTILOS BASE ===== */
+/* ===== RESET Y BASE ===== */
 * {
     margin: 0;
     padding: 0;
@@ -37,7 +34,6 @@ body {
     text-align: center;
 }
 
-/* ===== ANIMACIONES ===== */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -82,11 +78,19 @@ header {
     border-bottom: 2px solid var(--white);
 }
 
-/* Menú lateral */
+.hamburger-menu {
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
 .side-menu {
     position: fixed;
     top: 0;
-    left: -250px; /* Oculto por defecto */
+    left: -250px;
     width: 250px;
     height: 100vh;
     background: linear-gradient(180deg, var(--azul-fuerte), var(--azul-oscuro));
@@ -96,7 +100,7 @@ header {
 }
 
 .side-menu.open {
-    left: 0; /* Visible cuando está abierto */
+    left: 0;
 }
 
 .side-menu-list {
@@ -113,17 +117,6 @@ header {
     padding: 5px 10px;
 }
 
-/* Botón hamburguesa */
-.hamburger-menu {
-    background: none;
-    border: none;
-    color: var(--white);
-    font-size: 24px;
-    cursor: pointer;
-    display: none; /* Oculto en pantallas grandes */
-}
-
-/* Overlay para menú móvil */
 .overlay {
     position: fixed;
     top: 0;
@@ -201,7 +194,7 @@ header {
     font-weight: bolder;
 }
 
-/* ===== SECCIONES DE PROYECTOS ===== */
+/* ===== SECCIONES ===== */
 .section {
     background: var(--white);
     padding: 40px 20px;
@@ -216,18 +209,19 @@ header {
     transform: translateY(-5px);
 }
 
-.section h2 {
+.section h2, .skills-container h3 {
     color: var(--azul-fuerte);
     font-size: 48px;
     margin-bottom: 10px;
 }
+
+
 
 .section p {
     color: var(--black);
     font-size: var(--md);
 }
 
-/* Grid de proyectos */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -260,8 +254,6 @@ header {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* ===== COMPONENTES REUTILIZABLES ===== */
-/* Botón estándar */
 .btn {
     background: var(--azul-oscuro);
     color: var(--white);
@@ -279,7 +271,6 @@ header {
     background: var(--azul-fuerte);
 }
 
-/* Redes sociales */
 .social-links {
     display: flex;
     justify-content: center;
@@ -297,7 +288,6 @@ header {
     transform: scale(1.1);
 }
 
-/* Botón de WhatsApp */
 .box-btn-whatsapp {
     position: fixed;
     bottom: 50px;
@@ -315,7 +305,6 @@ header {
     transform: translateY(-15px);
 }
 
-/* ===== FOOTER ===== */
 footer {
     background: linear-gradient(180deg, var(--azul-oscuro), var(--azul-fuerte));
     color: var(--white);
@@ -356,272 +345,43 @@ footer {
     text-decoration: underline;
 }
 
-/* ===== MEDIA QUERIES ===== */
-/* Pantallas medianas (tablets) */
-@media (max-width: 768px) {
-    /* Footer */
-    footer {
-        padding: 20px 10px;
-    }
-    
-    .footer-content {
-        width: 100%;
-    }
-    
-    .footer-links {
-        gap: 15px;
-    }
-    
-    /* WhatsApp */
-    .box-btn-whatsapp {
-        bottom: 30px;
-        right: 10px;
-    }
-    
-    .btn-whatsapp {
-        width: 60px;
-    }
-    
-    /* Contenido principal */
-    main {
-        margin: 0px 10px;
-        padding: 0 10px;
-    }
-}
-
-/* Pantallas pequeñas (móviles) */
-@media (max-width: 568px) {
-    .nav-list {
-        display: none;
-    }
-
-    .hamburger-menu {
-        display: block;
-    }
-
-    .hero {
-        text-align: center;
-    }
-
-    .profile-img {
-        width: 180px;
-        height: 180px;
-    }
-}
-
-/* Pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .footer-links {
-        gap: 10px;
-        flex-direction: column;
-    }
-    
-    .social-links {
-        gap: 10px;
-    }
-}
-
-
-/* ===== SECCIÓN ACERCA DE MÍ ===== */
-.about-section {
-    padding-bottom: 50px;
-}
-
-.about-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
-    text-align: left;
-}
-
-.about-image {
-    flex: 1;
-    min-width: 250px;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.about-profile-img {
-    width: 100%;
-    max-width: 300px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    transition: var(--transition);
-}
-
-.about-profile-img:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.about-content {
-    flex: 2;
-    min-width: 300px;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.about-text h3 {
-    color: var(--azul-oscuro);
-    font-size: 24px;
-    margin-bottom: 10px;
-    position: relative;
-    display: inline-block;
-}
-
-.about-text h3::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 50px;
-    height: 3px;
-    background: var(--azul-claro);
-    border-radius: 3px;
-}
-
-.about-text p {
-    margin-bottom: 20px;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-.gallery-container {
-  padding: 2rem 1rem;
-}
-
+/* Galería */
 .gallery-grid {
-  display: grid;
-  gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 .gallery-item {
-  position: relative;
-  overflow: hidden;
-  border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
 }
 
 .gallery-item img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform .3s ease;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .3s ease;
 }
 
 .gallery-item:hover img {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 .caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: rgba(0,0,0,.6);
-  color: #fff;
-  font-size: .85rem;
-  text-align: center;
-  padding: .3rem 0;
-}
-
-
-
-
-
-/* Estilos para las habilidades */
-.skills-container h3 {
-    color: var(--azul-oscuro);
-    font-size: 24px;
-    margin-bottom: 20px;
-    position: relative;
-    display: inline-block;
-}
-
-.skills-container h3::after {
-    content: "";
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
-    width: 50px;
-    height: 3px;
-    background: var(--azul-claro);
-    border-radius: 3px;
+    width: 100%;
+    background: rgba(0,0,0,.6);
+    color: #fff;
+    font-size: .85rem;
+    text-align: center;
+    padding: .3rem 0;
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-}
-
-.skill-item {
-    margin-bottom: 15px;
-}
-
-.skill-name {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: var(--azul-fuerte);
-}
-
-.skill-bar {
-    height: 10px;
-    background-color: var(--gray);
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.skill-level {
-    height: 100%;
-    background: linear-gradient(to right, var(--azul-claro), var(--azul-oscuro));
-    border-radius: 5px;
-}
-
-/* Media queries para la sección Acerca de Mí */
-@media (max-width: 768px) {
-    .about-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .about-image {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-    
-    .about-profile-img {
-        max-width: 250px;
-    }
-    
-    .skills-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 480px) {
-    .about-text h3, .skills-container h3 {
-        font-size: 20px;
-    }
-    
-    .about-profile-img {
-        max-width: 200px;
-    }
-    
-    .skill-name {
-        font-size: 14px;
-    }
-    
-    .skill-bar {
-        height: 8px;
-    }
-}
-
-
-/* ===== SECCIÓN DE CONTACTO ===== */
+/* Contacto */
 .contact-section {
     padding-bottom: 60px;
 }
@@ -640,7 +400,6 @@ footer {
     margin-top: 30px;
 }
 
-/* Información de contacto */
 .contact-info {
     flex: 1;
     min-width: 300px;
@@ -686,20 +445,6 @@ footer {
     font-size: 18px;
 }
 
-.contact-social .social-links {
-    margin-top: 10px;
-}
-
-.contact-social .social-links img {
-    filter: brightness(1) invert(0);
-    opacity: .5;
-}
-
-.contact-social .social-links img:hover {
-    opacity: 1;
-}
-
-/* Formulario de contacto */
 .contact-form {
     flex: 1.5;
     min-width: 300px;
@@ -758,35 +503,86 @@ footer {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Media queries para la sección de contacto */
+/* MEDIA QUERIES */
 @media (max-width: 768px) {
+    footer {
+        padding: 20px 10px;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .footer-links {
+        gap: 15px;
+    }
+
+    .box-btn-whatsapp {
+        bottom: 30px;
+        right: 10px;
+    }
+
+    .btn-whatsapp {
+        width: 60px;
+    }
+
+    main {
+        margin: 0px 10px;
+        padding: 0 10px;
+    }
+
     .contact-container {
         flex-direction: column;
     }
-    
+
     .contact-info {
         order: 2;
     }
-    
+
     .contact-form {
         order: 1;
     }
 }
 
-@media (max-width: 480px) {
-    .contact-info {
-        padding: 20px;
+@media (max-width: 568px) {
+    .nav-list {
+        display: none;
     }
-    
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .hero {
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-links {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .social-links {
+        gap: 10px;
+    }
+
+    .contact-info,
     .contact-form {
         padding: 20px;
     }
-    
+
     .form-group input,
     .form-group textarea {
         padding: 10px;
     }
-    
+
     .submit-btn {
         padding: 10px 20px;
     }
