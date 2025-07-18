@@ -36,9 +36,35 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Uitoto",
       emprendimientos: [
         {
-          nombre: "Saberes de la Selva",
-          descripcion: "Talleres y productos derivados de plantas medicinales.",
-          imagen: "../img/emprendimiento3.jpg"
+          nombre: "DE LA HOJA A TU MESA",
+          descripcion: "CONSERVACIÓN DE ESPIRITUALIDAD PARA MEJORAR EL ENTORNO ESPIRITUAL",
+          imagen: "../img/14.5.jpg"
+        },
+        {
+          nombre: "ALIMENTOS DE LA CHAGRA",
+          descripcion: "!CON EL SABOR DE LA SELVA¡",
+          imagen: "../img/4.jpg"
+        },
+        {
+          nombre: "DERIVADOS DE LA YUCA",
+          descripcion: "SABOR UITOTO: RAICES AMAZONICAS EN CADA BOCADO",
+          imagen: "../img/19.jpg"
+        }
+      ]
+    },
+    {
+      name: "inga",
+      title: "Inga",
+      emprendimientos: [
+        {
+          nombre: "Tejidos del Sol",
+          descripcion: "Artesanía tradicional andina hecha con fibras naturales.",
+          imagen: "../img/emprendimiento4.jpg"
+        },
+        {
+          nombre: "Ritual Café",
+          descripcion: "Café especial cultivado con prácticas ancestrales.",
+          imagen: "../img/emprendimiento5.jpg"
         }
       ]
     },
