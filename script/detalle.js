@@ -57,14 +57,24 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "Inga",
       emprendimientos: [
         {
-          nombre: "Tejidos del Sol",
-          descripcion: "Artesanía tradicional andina hecha con fibras naturales.",
-          imagen: "../img/emprendimiento4.jpg"
+          nombre: "KUNUI",
+          descripcion: "CHAQUIRAS QUE PRESERVAN TRADICIÓN Y CULTURA",
+          imagen: "../img/6.jpg"
         },
         {
-          nombre: "Ritual Café",
-          descripcion: "Café especial cultivado con prácticas ancestrales.",
-          imagen: "../img/emprendimiento5.jpg"
+          nombre: "MANOS QUE TEJEN SABERES",
+          descripcion: "MANOS CREADORAS, MUJERES TEJEDORAS",
+          imagen: "../img/17.jpg"
+        },
+        {
+          nombre: "TEJIDOS UAIRA KILLA",
+          descripcion: "HISTORIA Y TRADICIÓN DE NUESTRAS RAÍCES INGA A TU ESTILO",
+          imagen: "../img/16.jpg"
+        },
+        {
+          nombre: "CURI URPIGU",
+          descripcion: "DISEÑO ANCESTRAL QUE CAMINA CONTIGO",
+          imagen: "../img/21.jpg"
         }
       ]
     },
