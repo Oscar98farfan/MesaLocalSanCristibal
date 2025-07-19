@@ -129,6 +129,26 @@ body {
 
 .btn-detalle:hover { background: var(--terracota); }
 
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: #0676ff; /* azul para Facebook */
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
 /* ===== FOOTER ===== */
 footer {
   background: linear-gradient(180deg, var(--mostaza), var(--terracota));
